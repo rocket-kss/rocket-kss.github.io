@@ -13,7 +13,7 @@
 - name: ご支援のおねがい
   link: /fund/
   new_window: false
-  highlight: false
+  highlight: true
 - name: お問い合わせ
   link: /contact/
   new_window: false
