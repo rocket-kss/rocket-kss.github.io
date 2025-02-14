@@ -1,6 +1,80 @@
 ---
 title: ロケット班の歴史
-description: >-
-  2021年に創立されてからのロケット班の壮大な歴史をご覧ください。
+description: 2021年に創立されてからのロケット班の壮大な歴史をご覧ください。
 ---
 
+
+</head>
+
+<body>
+  <div class="cp_timeline04">
+    <div class="timeline_item">
+      <div class="time_date">
+        <p class="time">2021</p>
+        <p class="flag">物理研究会 ロケット班 発足！！</p>
+      </div>
+      <div class="desc">
+        <p>ロケット班は2021年に発足しました。</p>
+      </div>
+    </div>
+    <div class="timeline_item">
+      <div class="time_date">
+        <p class="flag">発足して間もない頃</p>
+      </div>
+      <div class="desc">
+        <p>結成当初は、ロケットに関するノウハウも頼れる人もおらず、製作は試行錯誤の連続で難航していました。</p>
+      </div>
+    </div>
+    <div class="timeline_item">
+      <div class="time_date">
+        <p class="time">2022</p>
+        <p class="flag">全国大会初出場！そして最下位...</p>
+      </div>
+      <div class="desc">
+        <p>初めて挑んだ全国大会は、悪天候やDQで最下位という結果でした。</p>
+      </div>
+    </div>
+    <div class="timeline_item">
+      <div class="time_date">
+        <p class="time">2023</p>
+        <p class="flag">機体変革の時代</p>
+      </div>
+      <div class="desc">
+        <p>内容</p>
+      </div>
+    </div>
+    <div class="timeline_item">
+      <div class="time_date">
+        <p class="time">2024</p>
+        <p class="flag">悲願の全国大会総合優勝！！</p>
+      </div>
+      <div class="desc">
+        <p>全国大会で総合優勝を果たしました！</p>
+      </div>
+    </div>
+    <div class="timeline_item">
+      <div class="time_date">
+        <p class="time">2025</p>
+        <p class="flag">ロケット甲子園 優勝！！</p>
+      </div>
+      <div class="desc">
+        <p>福島県南相馬市で行われたロケット甲子園で初優勝しました！</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const timelineItems = document.querySelectorAll(".timeline_item");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.3 });
+      timelineItems.forEach(item => observer.observe(item));
+    });
+  </script>
+</body>
+
+</html>
