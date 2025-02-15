@@ -1,16 +1,104 @@
 ---
-title: 私たちについて
+title: 都立小石川 物理研究会 ロケット班
 description: >-
-  こんにちは、ロケット班です。破壊と創造を繰り返し、新しい世界を造り上げます。
 ---
 
-<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
-<!-- <ul class="staff">
-	{% for person in site.staff_members %}
-		<li>
-			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
-			<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
-			<div class="position">{{ person.position }}</div>
-		</li>
-	{% endfor %}
-</ul> -->
+<div class="content">
+	<h2 class="fade-in">世界へ挑戦！<br>高校生ロケットチームの挑戦</h2>
+
+	<div class="images fade-in">
+		<img src="" alt="ロケット打ち上げの写真">
+		<img src="" alt="ロケット甲子園優勝トロフィーの写真">
+	</div>
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2 class="fade-in section_title">ロケット班について</h2>
+				<p class="fade-in">
+					私たちは、文京区にある都立小石川中等教育学校の物理研究会ロケット班に所属しています。<br>モデルロケットという小型のロケットを設計・製作し、実際に打ち上げを行っています。<br>春と秋に開催される全国大会や、高校生向けのロケット甲子園に出場しています。<br>私たちは、ロケットの知識や技術を学び、仲間と協力して楽しみながらロケットを作ることを大切にしています。<br>発足からわずか数年で全国大会総合優勝やロケット甲子園優勝を果たし、さらなる高みを目指して挑戦を続けています。
+				</p>
+				<div class="images fade-in">
+					<img src="" alt="物研の写真とか">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2 class="fade-in">🚀モデルロケットとは？</h2>
+				<p class="fade-in">
+					モデルロケットとは、金属を使わずに作られる小型のロケットです。市販の固体燃料エンジン（黒色火薬）を使用し、高さ100mまで上昇し、速さは時速180kmにまで達します。主に教育目的などで活用されています。モデルロケットは5.5億回無事故で打ち上げが行われ、安全性が実証されています。
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2 class="fade-in">📅 活動内容</h2>
+				<p class="fade-in">・毎週金曜日に活動し、ロケットの設計・製作・打ち上げをしています。<br>
+					・春と秋のモデルロケット全国大会に出場<br>
+					・高校生向けのロケット甲子園にも挑戦</p>
+			</div>
+	</section>
+
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2 class="fade-in">🏆 実績</h2>
+				<p class="fade-in">・第45回全国大会 総合優勝！<br>
+					・ロケット甲子園2024 初出場・初優勝！</p>
+			</div>
+	</section>
+
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2 class="fade-in">🌍 世界大会へ！</h2>
+				<p class="fade-in">・モデルロケット世界大会IRCに日本代表として出場！<br>
+					・2025年、フランス・パリのパリ航空ショーで開催！</p>
+				<div class="images fade-in">
+					<img src="" alt="IRC または 世界っぽい画像">
+				</div>
+			</div>
+	</section>
+
+
+	<section>
+		<div class="container flex">
+			<div class="text editable">
+				<h2 class="fade-in">💡 私たちの魅力</h2>
+				<p class="fade-in">・元気いっぱいで行動力がある！<br>
+					・破壊と創造の連続<br>
+					・仲間と楽しみながらロケットを作ることを大切に！</p>
+				<div class="images fade-in">
+					<img src="" alt="楽しそうな画像 or ShoyaXの画像">
+				</div>
+				<h2 class="fade-in">🙌 ご支援お願いします！</h2>
+				<p class="fade-in">私たちの夢を応援してくれる方を募集中です！<br>
+					世界大会への挑戦をサポートしていただけませんか？</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script>
+		// スクロール時に要素をフェードインさせる
+		document.addEventListener("scroll", function () {
+			let elements = document.querySelectorAll(".fade-in");
+			elements.forEach(el => {
+				let rect = el.getBoundingClientRect();
+				if (rect.top < window.innerHeight * 0.85) {
+					el.classList.add("visible");
+				}
+			});
+		});
+	</script>

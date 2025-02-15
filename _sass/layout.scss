@@ -220,10 +220,16 @@ blockquote:before {
 
 
 h2 {
-	font-family: 'Kiwi Maru', serif;
+
+	//border-bottom: 2px solid #ff6a00;
+	font-family: 'Kiwi Maru',serif;
+
 }
 
-
+.section_title{
+	border-bottom: 2px solid #ff6a00;
+	font-family: 'Kiwi Maru',serif;
+}
 
 
 .cp_timeline04 {
@@ -327,4 +333,47 @@ h2 {
 	}
 
 
+}
+
+
+
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideIn {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes rocketLaunch {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* スクロール時のフェードイン効果 */
+.fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
 }
